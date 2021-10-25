@@ -5,7 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sajjad4297</title>
-<link type="text/css" rel="stylesheet" href="riazi.css">
+<style>
+p {font-size:32px;color:red;background-color:powderblue;text-align:center}
+h1 {text-align:center;font-size:40px;background-color:rgba(255, 255, 128, .5);}
+table {text-align:center;margin:auto;font-size:30px;}
+th,td,table {border:8px groove #e3821c;border-collapse:collapse;padding:25px;}
+.c {background-color:#c8e7cc}
+.c2 {background-color:#6bdb7a}
+th {color:white;background-color:#20bd07}
+button {font-size:50px;padding-left:50px;padding-right:50px;
+  display:block;margin:auto;margin-top:20px;width:300px}
+</style>
 </head>
 <body id="body">
   <h1 id=h title="ساعت"></h1>
@@ -32,6 +42,76 @@
       <td class=c2>از 12:45 تا 13:30</td>
     </tr>
   </table>
-  <script src="riazi.js" type="text/javascript"></script>
+  <div>
+  <button onclick="saturday()">شنبه</button>
+  <button onclick="sunday()">یکشنبه</button>
+  <button onclick="monday()">دوشنبه</button>
+  <button onclick="tuesday()">سه‌شنبه</button>
+  <button onclick="wednesday()">چهارشنبه</button>
+  <script type="text/javascript">var d=new Date();
+  var day=d.getDay();
+  document.getElementById('h').innerHTML= d.getHours() + ":" + d.getMinutes();
+  var z1=document.getElementById('z1');
+  var z2=document.getElementById('z2');
+  var z3=document.getElementById('z3');
+  var z4=document.getElementById('z4');
+  var sajy=document.getElementById('sajy');
+  function saturday() {
+    z1.innerHTML=("شیمی");
+    z2.innerHTML=("عربی");
+    z3.innerHTML=("آزمایشگاه");
+    z4.innerHTML=("دفاع");
+    sajy.innerHTML=("شنبه")
+  };
+  function sunday() {
+    z1.innerHTML=("زبان");
+    z2.innerHTML=("دفاع");
+    z3.innerHTML=("ریاضی");
+    z4.innerHTML=("نگارش");
+    sajy.innerHTML=("یکشنبه")
+  };
+  function monday() {
+    z1.innerHTML=("فیزیک");
+    z2.innerHTML=("ورزش");
+    z3.innerHTML=("دین‌و‌زندگی");
+    z4.innerHTML=("شیمی");
+    sajy.innerHTML=("دوشنبه")
+  };
+  function tuesday() {
+    z1.innerHTML=("ریاضی");
+    z2.innerHTML=("نگارش/زبان");
+    z3.innerHTML=("فارسی");
+    z4.innerHTML=("جغرافیا");
+    sajy.innerHTML=("سه‌شنبه")
+  };
+  function wednesday() {
+    z1.innerHTML=("فیزیک");
+    z2.innerHTML=("هندسه");
+    z3.innerHTML=("کارآفرینی");
+    z4.innerHTML=("جغرافیا");
+    sajy.innerHTML=("چهارشنبه")
+  };
+  switch (day) {
+      case 0:;sunday()
+      break;
+      case 1:;monday()
+      break;
+      case 2:;tuesday()
+      break;
+      case 3:;wednesday()
+      break;
+      case 4:
+      sajy.innerHTML=("پنج‌شنبه")
+       document.getElementById('j').style.display=("none");
+      break;
+      case 5:
+      sajy.innerHTML=("جمعه")
+       document.getElementById('j').style.display=("none");
+      break;
+      case 6:saturday()
+      break;
+  };
+</script>
+</div>
 </body>
 </html>

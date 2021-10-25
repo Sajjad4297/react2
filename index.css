@@ -1,5 +1,5 @@
 body {}
-  div {;font-size:30px;text-align:center;display:inline;}
-  ul {list-style-type:none;padding-top:6px;padding-bottom:6px;}
-  li {display:inline;background-color:#0a0799;padding-top:5px;padding-bottom:5px;border-radius:10px;}
-  a {text-decoration:none;color:#ffffff;font-weight:bold;padding:10px}
+  ul {list-style-type:none;padding:0;margin:auto;width:300px;font-size:30px;text-align:center;}
+  li {border:1px solid white;margin-bottom:20px;padding-top:8px;padding-bottom:8px}
+  a:link,a:visited {background-color:#0d08eb;border-radius:10px;text-decoration:none;color:#ffffff;font-weight:bold;padding:10px;display:block;}
+  a:hover {background-color:#060455}

@@ -1,31 +1,35 @@
 function all() {
 var d=new Date();
 var day=d.getDay();
-document.getElementById('h').innerHTML= d.getHours() + ":" + d.getMinutes()
+document.getElementById('h').innerHTML= d.getHours() + ":" + d.getMinutes();
+var z1=document.getElementById('z1');
+var z2=document.getElementById('z2');
+var z3=document.getElementById('z3');
+var z4=document.getElementById('z4');
 switch (day) {
     case 0:t="یکشنبه";
-     document.getElementById('z1').innerHTML=("نگارش");
-     document.getElementById('z2').innerHTML=("ریاضی");
-     document.getElementById('z3').innerHTML=("دین‌و‌زندگی");
-     document.getElementById('z4').innerHTML=("جغرافیا");
+     z1.innerHTML=("زبان");
+     z2.innerHTML=("دفاع");
+     z3.innerHTML=("ریاضی");
+     z4.innerHTML=("نگارش");
     break;
     case 1:t="دوشنبه";
-     document.getElementById('z1').innerHTML=("آزمایشگاه");
-     document.getElementById('z2').innerHTML=("زبان/دفاع");
-     document.getElementById('z3').innerHTML=("شیمی");
-     document.getElementById('z4').innerHTML=("دفاع");
+     z1.innerHTML=("فیزیک");
+     z2.innerHTML=("ورزش");
+     z3.innerHTML=("دین‌و‌زندگی");
+     z4.innerHTML=("شیمی");
     break;
     case 2: t ="سه‌شنبه";
-     document.getElementById('z1').innerHTML=("کارآفرینی");
-     document.getElementById('z2').innerHTML=("فارسی");
-     document.getElementById('z3').innerHTML=("ریاضی");
-     document.getElementById('z4').innerHTML=("جغرافیا");
+     z1.innerHTML=("ریاضی");
+     z2.innerHTML=("نگارش/زبان");
+     z3.innerHTML=("فارسی");
+     z4.innerHTML=("جغرافیا");
     break;
     case 3:t="چهارشنبه";
-     document.getElementById('z1').innerHTML=("ورزش");
-     document.getElementById('z2').innerHTML=("فیزیک");
-     document.getElementById('z3').innerHTML=("هندسه");
-     document.getElementById('z4').innerHTML=("دفاع");
+     z1.innerHTML=("فیزیک");
+     z2.innerHTML=("هندسه");
+     z3.innerHTML=("کارآفرینی");
+     z4.innerHTML=("جغرافیا");
     break;
     case 4:t="پنچ‌شنبه";
      document.getElementById('j').style.display=("none");
@@ -34,10 +38,10 @@ switch (day) {
      document.getElementById('j').style.display=("none");
     break;
     case 6:t="شنبه";
-     document.getElementById('z1').innerHTML=("زبان");
-     document.getElementById('z2').innerHTML=("فیزیک");
-     document.getElementById('z3').innerHTML=("عربی");
-     document.getElementById('z4').innerHTML=("شیمی");
+     z1.innerHTML=("شیمی");
+     z2.innerHTML=("عربی");
+     z3.innerHTML=("آزمایشگاه");
+     z4.innerHTML=("دفاع");
     break;
 
 };

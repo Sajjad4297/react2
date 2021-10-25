@@ -1,0 +1,5 @@
+body {}
+  div {;font-size:30px;text-align:center;display:inline;}
+  ul {list-style-type:none;padding-top:6px;padding-bottom:6px;}
+  li {display:inline;background-color:#0a0799;padding-top:5px;padding-bottom:5px;border-radius:10px;}
+  a {text-decoration:none;color:#ffffff;font-weight:bold;padding:10px}

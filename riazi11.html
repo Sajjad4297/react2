@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sajjad4297</title>
+<style>
+p {font-size:32px;color:red;background-color:powderblue;text-align:center}
+h1 {text-align:center;font-size:40px;background-color:rgba(255, 255, 128, .5);}
+table {text-align:center;margin:auto;font-size:30px;}
+th,td,table {border:8px groove #e3821c;border-collapse:collapse;padding:25px;}
+.c {background-color:#c8e7cc}
+.c2 {background-color:#6bdb7a}
+th {color:white;background-color:#20bd07}
+button {font-size:50px;padding-left:50px;padding-right:50px;
+  display:block;margin:auto;margin-top:20px;width:300px}
+</style>
+</head>
+<body id="body">
+  <h1 id=h title="ساعت"></h1>
+  <p id="sajy"></p>
+  <table id=j>
+    <tr>
+      <th>درس</th>
+      <th>زمان</th>
+    </tr>
+    <tr>
+      <td id=z1 class=c></td>
+      <td class=c>از 10:00 تا 10:45</td>
+    </tr>
+    <tr>
+      <td id=z2 class=c2></td>
+      <td class=c2>از 10:55 تا 11:40</td>
+    </tr>
+    <tr>
+      <td id=z3 class=c></td>
+      <td class=c>از 11:50 تا 12:35</td>
+    </tr>
+    <tr>
+      <td id=z4 class=c2></td>
+      <td class=c2>از 12:45 تا 13:30</td>
+    </tr>
+  </table>
+  <div>
+  <button onclick="saturday()">شنبه</button>
+  <button onclick="sunday()">یکشنبه</button>
+  <button onclick="monday()">دوشنبه</button>
+  <button onclick="tuesday()">سه‌شنبه</button>
+  <button onclick="wednesday()">چهارشنبه</button>
+  <script type="text/javascript">var d=new Date();
+  var day=d.getDay();
+  document.getElementById('h').innerHTML= d.getHours() + ":" + d.getMinutes();
+  var z1=document.getElementById('z1');
+  var z2=document.getElementById('z2');
+  var z3=document.getElementById('z3');
+  var z4=document.getElementById('z4');
+  var sajy=document.getElementById('sajy');
+  function saturday() {
+    z1.innerHTML=("عربی");
+    z2.innerHTML=("شیمی/آزمایشگاه");
+    z3.innerHTML=("آمار و احتمال");
+    z4.innerHTML=("زبان");
+    sajy.innerHTML=("شنبه")
+  };
+  function sunday() {
+    z1.innerHTML=("دین‌و‌زندگی");
+    z2.innerHTML=("حسابان");
+    z3.innerHTML=("فیزیک");
+    z4.innerHTML=("نگارش");
+    sajy.innerHTML=("یکشنبه")
+  };
+  function monday() {
+    z1.innerHTML=("زبان");
+    z2.innerHTML=("محیط‌ زیست");
+    z3.innerHTML=("شیمی");
+    z4.innerHTML=("تفکر");
+    sajy.innerHTML=("دوشنبه")
+  };
+  function tuesday() {
+    z1.innerHTML=("زمین‌شناسی");
+    z2.innerHTML=("فیزیک");
+    z3.innerHTML=("تاریخ");
+    z4.innerHTML=("حسابان");
+    sajy.innerHTML=("سه‌شنبه")
+  };
+  function wednesday() {
+    z1.innerHTML=("هندسه");
+    z2.innerHTML=("فارسی");
+    z3.innerHTML=("ورزش");
+    z4.innerHTML=("تفکر");
+    sajy.innerHTML=("چهارشنبه")
+  };
+  switch (day) {
+      case 0:;sunday()
+      break;
+      case 1:;monday()
+      break;
+      case 2:;tuesday()
+      break;
+      case 3:;wednesday()
+      break;
+      case 4:
+      sajy.innerHTML=("پنج‌شنبه")
+       document.getElementById('j').style.display=("none");
+      break;
+      case 5:
+      sajy.innerHTML=("جمعه")
+       document.getElementById('j').style.display=("none");
+      break;
+      case 6:saturday()
+      break;
+  };
+</script>
+</div>
+</body>
+</html>

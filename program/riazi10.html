@@ -6,13 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sajjad4297</title>
 <style>
+@font-face {
+    font-family: "Vazir";
+    src: url('./font/Vazir-Regular.woff2') format('woff2');}
+    * {font-family:vazir}
 p {font-size:32px;color:red;background-color:powderblue;text-align:center}
 h1 {text-align:center;font-size:40px;background-color:rgba(255, 255, 128, .5);}
 table {text-align:center;margin:auto;font-size:30px;}
 th,td,table {border:8px groove #e3821c;border-collapse:collapse;padding:25px;}
 .c {background-color:#c8e7cc}
 .c2 {background-color:#6bdb7a}
-th {color:white;background-color:#20bd07}
+th {color:white;background-color:#20bd07;}
 button {font-size:50px;padding-left:50px;padding-right:50px;
   display:block;margin:auto;margin-top:20px;width:300px}
 </style>
@@ -61,35 +65,40 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
     z2.innerHTML=("عربی");
     z3.innerHTML=("آزمایشگاه");
     z4.innerHTML=("دفاع");
-    sajy.innerHTML=("شنبه")
+    sajy.innerHTML=("شنبه");
+    document.getElementById('j').style.display=("table");
   };
   function sunday() {
     z1.innerHTML=("زبان");
     z2.innerHTML=("دفاع");
     z3.innerHTML=("ریاضی");
     z4.innerHTML=("نگارش");
-    sajy.innerHTML=("یکشنبه")
+    sajy.innerHTML=("یکشنبه");
+    document.getElementById('j').style.display=("table");
   };
   function monday() {
     z1.innerHTML=("فیزیک");
     z2.innerHTML=("ورزش");
     z3.innerHTML=("دین‌و‌زندگی");
     z4.innerHTML=("شیمی");
-    sajy.innerHTML=("دوشنبه")
+    sajy.innerHTML=("دوشنبه");
+    document.getElementById('j').style.display=("table");
   };
   function tuesday() {
     z1.innerHTML=("ریاضی");
     z2.innerHTML=("نگارش/زبان");
     z3.innerHTML=("فارسی");
     z4.innerHTML=("جغرافیا");
-    sajy.innerHTML=("سه‌شنبه")
+    sajy.innerHTML=("سه‌شنبه");
+    document.getElementById('j').style.display=("table");
   };
   function wednesday() {
     z1.innerHTML=("فیزیک");
     z2.innerHTML=("هندسه");
     z3.innerHTML=("کارآفرینی");
     z4.innerHTML=("جغرافیا");
-    sajy.innerHTML=("چهارشنبه")
+    sajy.innerHTML=("چهارشنبه");
+    document.getElementById('j').style.display=("table");
   };
   switch (day) {
       case 0:;sunday()
@@ -102,7 +111,7 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
       break;
       case 4:
       sajy.innerHTML=("پنج‌شنبه")
-       document.getElementById('j').style.display=("none");
+      document.getElementById('j').style.display=("none");
       break;
       case 5:
       sajy.innerHTML=("جمعه")

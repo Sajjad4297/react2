@@ -9,7 +9,7 @@
 @font-face {
     font-family: "Vazir";
     src: url('./font/Vazir-Regular.woff2') format('woff2');}
-    * {font-family:vazir}
+    * {font-family:vazir,serif}
 p {font-size:32px;color:red;background-color:powderblue;text-align:center}
 h1 {text-align:center;font-size:40px;background-color:rgba(255, 255, 128, .5);}
 table {text-align:center;margin:auto;font-size:30px;}
@@ -18,7 +18,9 @@ th,td,table {border:8px groove #e3821c;border-collapse:collapse;padding:10px;}
 .c2 {background-color:#6bdb7a}
 th {color:white;background-color:#20bd07;}
 button {font-size:50px;padding-left:50px;padding-right:50px;
-  display:block;margin:auto;margin-top:20px;width:300px}
+  display:block;
+  margin: 20px auto auto;
+  width:300px}
 </style>
 </head>
 <body id="body">
@@ -52,14 +54,14 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
   <button onclick="monday()">دوشنبه</button>
   <button onclick="tuesday()">سه‌شنبه</button>
   <button onclick="wednesday()">چهارشنبه</button>
-  <script type="text/javascript">var d=new Date();
-  var day=d.getDay();
+  <script type="text/javascript">const d = new Date();
+  const day=d.getDay();
   document.getElementById('h').innerHTML= d.getHours() + ":" + d.getMinutes();
-  var z1=document.getElementById('z1');
-  var z2=document.getElementById('z2');
-  var z3=document.getElementById('z3');
-  var z4=document.getElementById('z4');
-  var sajy=document.getElementById('sajy');
+  const z1=document.getElementById('z1');
+  const z2=document.getElementById('z2');
+  const z3=document.getElementById('z3');
+  const z4=document.getElementById('z4');
+  const sajy=document.getElementById('sajy');
   function saturday() {
     z1.innerHTML=("شیمی");
     z2.innerHTML=("عربی");
@@ -67,7 +69,7 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
     z4.innerHTML=("دفاع");
     sajy.innerHTML=("شنبه");
     document.getElementById('j').style.display=("table");
-  };
+  }
   function sunday() {
     z1.innerHTML=("زبان");
     z2.innerHTML=("دفاع");
@@ -75,7 +77,7 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
     z4.innerHTML=("نگارش");
     sajy.innerHTML=("یکشنبه");
     document.getElementById('j').style.display=("table");
-  };
+  }
   function monday() {
     z1.innerHTML=("فیزیک");
     z2.innerHTML=("ورزش");
@@ -83,7 +85,7 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
     z4.innerHTML=("شیمی");
     sajy.innerHTML=("دوشنبه");
     document.getElementById('j').style.display=("table");
-  };
+  }
   function tuesday() {
     z1.innerHTML=("ریاضی");
     z2.innerHTML=("نگارش/زبان");
@@ -91,7 +93,7 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
     z4.innerHTML=("جغرافیا");
     sajy.innerHTML=("سه‌شنبه");
     document.getElementById('j').style.display=("table");
-  };
+  }
   function wednesday() {
     z1.innerHTML=("فیزیک");
     z2.innerHTML=("هندسه");
@@ -99,15 +101,15 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
     z4.innerHTML=("جغرافیا");
     sajy.innerHTML=("چهارشنبه");
     document.getElementById('j').style.display=("table");
-  };
+  }
   switch (day) {
-      case 0:;sunday()
+      case 0:sunday()
       break;
-      case 1:;monday()
+      case 1:monday()
       break;
-      case 2:;tuesday()
+      case 2:tuesday()
       break;
-      case 3:;wednesday()
+      case 3:wednesday()
       break;
       case 4:
       sajy.innerHTML=("پنج‌شنبه")
@@ -119,7 +121,7 @@ button {font-size:50px;padding-left:50px;padding-right:50px;
       break;
       case 6:saturday()
       break;
-  };
+  }
 </script>
 </div>
 </body>

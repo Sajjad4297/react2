@@ -25,7 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HTML" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -39,6 +39,8 @@
       <updated>1640707163673</updated>
       <workItem from="1640707165314" duration="680000" />
       <workItem from="1640708032336" duration="250000" />
+      <workItem from="1640708336509" duration="162000" />
+      <workItem from="1640897868291" duration="67000" />
     </task>
     <servers />
   </component>
